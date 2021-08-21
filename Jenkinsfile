@@ -54,7 +54,7 @@ pipeline {
                                     sh label: 'build', script: '''
                                     echo "Deploy to s3 bucket..."
                                     VERSION=`cat app/VERSION`
-                                    aws s3 cp dist/infinity-$VERSION* s3://usc-tony-infinity-us-east-1/
+                                    aws s3 cp ./cicd-github/Qi-CICD-Jenkins-Test101/dist/infinity-$VERSION* s3://qi-s3-bucket-test101/
                                     '''
                                 }
                             }
