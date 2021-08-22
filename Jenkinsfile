@@ -54,7 +54,7 @@ pipeline {
                                     sh label: 'build', script: '''
                                     echo "Deploy to s3 bucket..."
                                     VERSION=`cat app/VERSION`
-                                    aws s3 cp dist/fastapi_example-1.0.0-py3-none-any.whl s3://qi-s3-bucket-test101/
+                                    aws s3 cp dist/fastapi_example-1.0.0-py3-none-any.whl s3://qi-s3-bucket-test101/fastapi_example-1.0.0-py3-none-any.whl
                                     '''
                                 }
                             }
