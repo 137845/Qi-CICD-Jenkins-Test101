@@ -71,7 +71,7 @@ pipeline {
                                     aws s3 cp s3://qi-s3-bucket-test101/fastapi_example-1.0.0-py3-none-any.whl /tmp
                                     source venv/bin/activate
                                     which pip
-                                    pip install /tmp/infinity-$VERSION-py3-none-any.whl
+                                    pip install /tmp/fastapi_example-1.0.0-py3-none-any.whl
                                     pip list
                                     export PYTHONPATH="./app"
                                     cd app
